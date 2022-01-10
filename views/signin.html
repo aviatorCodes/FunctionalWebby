@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="signin.css">
+        <link rel="stylesheet" type="text/css" href="login.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SignIn</title>
+    </head>
+    <body>
+        <form class="form-container" id="form" onsubmit="return validate()">
+            <p id="error"></p>
+            <h3>Login</h3>
+            <div class="form-grp">
+                <label for="=E-mail">E-mail</label><br>
+                <input type="text" name="E-mail" placeholder="E-mail" id="user">
+                <i class="fa fa-exclamation-circle" id="u_times"></i>
+                <i class="fa fa-check u_check" id="u_check"></i>
+            </div>
+
+            <div class="form-grp">
+                <label for="=password">Password</label><br>
+                <input type="password" name="password" placeholder="Password" id="pass">
+                <i class="fa fa-exclamation-circle" id="p_times"></i>
+                <i class="fa fa-check u_check" id="p_check"></i>
+            </div>
+            <ul><a href="support">Forgot password</a></ul>
+            <div class="form-grp">
+                <input type="submit" name="login-btn" placeholder="username, password" value="Login">
+            </div>
+        </form>
+        <img src="cluster.png" class="cluster">
+        <script type="text/javascript" src="signin.js"></script>
+        <header>
+            <ul>
+                <li><a href="back" class="inactive">Back</a></li>
+            </ul>
+        </header>
+    </body>
+</html>

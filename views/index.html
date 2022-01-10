@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="login.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beta</title>
+    </head>
+    <body>
+        <header>
+            <a href="support" class="logo">Support</a>
+                <ul>
+                 <li><a href="/" class="inactive">Home</a></li>
+                 <li><a href="work" class="inactive">Work</a></li>
+                 <li><a href="about" class="inactive">About</a></li>
+                </ul>
+                <ul>
+                    <li><a href="signin" class="inactive">SignIn</a></li>
+                </ul>
+                <div class="right-col">
+                    <img src="play.png" id="icon">
+                </div>
+            </header>
+            <section>
+                <img src="GaG.jpg" id="GaG">
+            </section>
+            <audio id="willow">
+                <source src="willowts.mp3" type="audio/mp3">
+            </audio>
+            <script>
+                var willow = document.getElementById('willow')
+                var icon = document.getElementById('icon')
+                icon.onclick = function() {
+                    if(willow.paused) {
+                        willow.play();
+                        icon.src = "pause.png"
+                    } else {
+                        willow.pause();
+                        icon.src = "play.png"
+                    }
+                }
+            </script>
+    </body>
+</html>
